@@ -1,0 +1,7 @@
+FROM nginx
+
+LABEL maintainer="emmanuel Holonou"
+
+COPY assessment1 /usr/share/nginx/html/assessment1
+COPY assessment2 /usr/share/nginx/html/assessment2
+

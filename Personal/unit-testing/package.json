@@ -1,0 +1,14 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "A repo for my quality assurance journey as a future accomplished Backend Software Engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel Holonou",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.32.2"
+  }
+}

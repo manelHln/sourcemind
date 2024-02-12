@@ -1,0 +1,22 @@
+git checkout -b lesson-3
+cd DEVOPS
+mkdir homework-3
+echo "1" > file1
+git add .
+git commit -m "Added file1"
+
+echo "2" > file2
+git add .
+git commit "Added file2"
+
+echo "3" > file3
+git add .
+git commit -m "Added file3"
+
+echo "4" > file4
+git add .
+git commit -m "Added file4"
+
+git revert HEAD~3
+
+git reset HEAD~2

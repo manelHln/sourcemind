@@ -1,0 +1,100 @@
+Un  1
+Deux 2
+Trois 3
+Quatre 4
+Cinq 5
+Six 6
+Sept 7
+Huit 8
+Neuf 9
+Dix 10
+Onze 11
+Douze 12
+Treize 13
+Quatorze 14
+Quinze 15
+Seize 16
+Dix-sept  17
+Dix-huit 18
+Dix-neuf 19
+Vingt 20
+Vingt et un 21
+Vingt-deux 22
+Vingt-trois 23
+Vingt-quatre 24
+Vingt-cinq 25
+Vingt-six 26
+Vingt-sept 27
+Vingt-huit 28
+Vingt-neuf 29
+Trente 30
+Trente et un 31
+Trente-deux 32
+Trente-trois 33
+Trente-quatre 34
+Trente-cinq 35
+Trente-six 36
+Trente-sept 37
+Trente-huit 38
+Trente-neuf 39
+Quarante 40
+Quarante et un 41
+Quarante-deux 42
+Quarante-trois 43
+Quarante-quatre 44
+Quarante-cinq 45
+Quarante-six 46
+Quarante-sept 47
+Quarante-huit 48
+Quarante-neuf 49
+Cinquante 50
+Cinqante et un 51
+Cinquante-deux  52
+Cinquante-trois 53
+Cinquante-quatre 54
+Cinquante-cinq 55
+Cinquante-six 56
+Cinquante-sept 57
+Cinquante-huit 58
+Cinquante-neuf 59
+Soixante 60
+Soixante et un 61
+Soixante-deux 62
+Soixante-trois 63
+Soixante-quatre 64
+Soixante-cinq 65
+Soixante-six 66
+Soixante-sept 67
+Soixante-huit 68
+Soixante-neuf 69
+Soixante-dix 70
+Soixante et onze 71
+Soixante douze 72
+Soixante treize 73
+Soixante-quatorze 74
+Soixante-quinze 75
+Soixante-seize 76
+Soixante-dix-sept 77
+Soixante-dix-huit 78
+Soixante-dix-neuf-79
+Quatre-vingts 80
+Quatre-vingt-un 81
+Quatre-vingt-deux 82
+Quatre-vingt trois 83
+Quatre-vingt-quatre 84
+Quatre-vingt-cinq 85
+Quatre-vingt-six 86
+Quatre-vingt-sept 87
+Quatre-vingt-huit 88
+Quatre-vingt-neuf 89
+Quatre-vingt-dix 90
+Quatre-vingt-onze 91
+Quatre-vingt-douze 92
+Quatre-vingt-treize 93
+Quatre-vingt-quatorze 94
+Quatre-vingt-quinze 95
+Quatre-vingt-seize 96
+Quatre-vingt-dix-sept 97
+Quatre-vingt-dix-huit 98
+Quatre-vingt-dix-neuf 99
+cent 100

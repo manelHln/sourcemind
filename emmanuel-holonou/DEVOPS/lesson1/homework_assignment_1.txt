@@ -1,0 +1,27 @@
+who
+man diff
+man cal
+man last
+man date
+man cat
+cal -y 2028 >> calendar-2028.txt
+date -d "2 years ago"
+man history
+cat calendar-2028.txt
+colour=red
+echo $colour
+colour=blue
+echo $colour
+printenv >> env.txt
+export colour
+printenv >> env-new.txt
+diff env.txt env-new.txt
+unset colour
+printenv
+touch first-file
+cp first-file /tmp
+mkdir first-directory
+mv first-file first-directory
+mv first-directory /tmp
+rm /tmp/first-file
+rm -rf /tmp/first-directory

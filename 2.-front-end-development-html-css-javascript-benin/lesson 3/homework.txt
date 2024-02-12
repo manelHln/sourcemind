@@ -1,0 +1,12 @@
+1. Write a code, which will take numbers from the prompt window 3 times, and print their arithmetic average in the console.
+2. Swap 2 numbers without a third variable.
+3. Write a code to find the largest of three numbers.
+4. Write a code to check triangle type(equilateral, scalene, or isosceles)
+5. What will be the output and why?
+	const number = Boolean('true');
+	const boolean = String(true);
+	const string = Number(true)
+	const object = Number('true')
+	const sum = number + string + object;
+	console.log(number, boolean, string, object, sum);
+

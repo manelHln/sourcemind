@@ -1,0 +1,39 @@
+Deadline: On Friday
+
+1) Given
+
+const users = [
+	{ name: "Mike", age: 18, id: 1 },
+	{ name: "An", age: 20, id: 2 },
+	{ name: "Tom", age: 23, id: 3 },
+	{ name: "Lucy", age: 25, id: 4 }
+]
+
+Write a function that will receive an argument and return an array of user data. The data depends on the argument
+
+('name') => ['Mike', 'An', 'Tom', 'Lucy']
+('age') => [18, 20, 23, 25]
+('id') => [1, 2, 3, 4]
+
+
+
+2) Write a function that will capitalize the first letter of hyphenated words
+
+('background-color') => 'backgroundColor'
+('-webkit-transition') => 'WebkitTransition'
+
+
+3) Write a function that takes an array and two numbers and returns the numbers in the array that fall within the range of the received numbers
+
+([2, 66, 3, 9], 1, 3) => [2, 3]
+([-32, 6, 31, 0], -10, -99) => [-32]
+
+
+4) Write a function that takes an array and returns an array containing only those elements that are repeated:
+
+([1, 2, 3, 3, 4, 4, 5]) => [3, 4]
+
+
+5) Write a function that receives an array of numbers and any number of numbers. The function returns a new array
+without those numbers
+([1, 2, 3, 4, 1, 2], 1, 2) => [3, 4]

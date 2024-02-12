@@ -1,0 +1,10 @@
+1. Write a code to reverse an array (without using arr.reverse() method)
+2. Write a code to to get the max element of an array
+3. Write a code that will receive a number from the prompt and print asterisks. 
+For example, if we the number equals 5, print the following form:
+*
+**
+***
+****
+***** 
+4. Write a code that will print the most repeated element in an array and its count.

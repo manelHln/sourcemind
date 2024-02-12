@@ -1,0 +1,15 @@
+.small-pic{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.large-pic{
+    width: 500px;
+}
+
+.medium-pic{
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+}

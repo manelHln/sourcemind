@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web-server:
+    container_name: web_server
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-config:/etc/nginx/conf.d
+    networks:
+      - app-network
+
+  database:
+    container_name: pg_database
+    image: postgres:latest
+    ports:
+      - ${DB_PORT:-5432}:5432
+    volumes:
+      - ./docker/pg:/var/lib/postgresql
+    networks:
+      - app-network
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+networks:
+  app-network:
+    driver: bridge

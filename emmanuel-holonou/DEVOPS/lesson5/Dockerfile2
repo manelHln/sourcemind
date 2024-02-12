@@ -1,0 +1,12 @@
+FROM ubuntu
+
+LABEL maintainer="emmanuel Holonou"
+
+RUN apt-get update && apt-get install -y nginx
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+COPY ./assessment1 /var/www/html/assessment1
+COPY ./assessment2 /var/www/html/assessment2
+
+EXPOSE 80 443
+CMD ["nginx"]
+

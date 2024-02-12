@@ -1,0 +1,15 @@
+{
+  "name": "assessment2",
+  "version": "1.0.0",
+  "description": "Assessement 2",
+  "main": "script.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Emmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^4.2.4",
+    "vitest": "^0.32.2"
+  }
+}

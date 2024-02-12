@@ -1,0 +1,11 @@
+FROM ubuntu
+LABEL maintainer="emmanuel Holonou"
+
+RUN apt-get update && apt-get install -y apache2
+COPY ./assessment\ 1 /var/www/html/assessment1
+COPY ./assessment\ 2 /var/www/html/assessment2
+
+EXPOSE 80 443
+
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+

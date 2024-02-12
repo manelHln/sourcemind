@@ -1,0 +1,53 @@
+Deadline: On Sunday 04/05/2023 11:59 PM
+
+1. Write a function that will receive an array as the first argument, and an object as the second argument.
+The function should return objects corresponding to that key/value.
+
+const students = [
+   {
+       name: 'Mike',
+       gender: 'male',
+       age: 20
+   },
+   {
+       name: 'An',
+       gender: 'female',
+       age: 21
+   },
+   {
+       name: 'Lucy',
+       gender: 'female',
+       age: 20
+   },
+   {
+       name: 'John',
+       gender: 'male',
+       age: 21
+   },
+   {
+       name: 'Tom',
+       gender: 'male',
+       age: 22
+   }
+];
+
+function getFilteredArray(arr, obj){
+	//your code
+}
+getFilteredArray(students, {gender: male}) - returning all male students
+getFilteredArray(students, {age: 21}) - returning all students whose age is 21
+
+
+2. Write a function named transfer, which will receive a string as a parameter and return an object, in which the key will be the character of the string, and the value will be the number of that character in the string.
+
+example:
+transfer(“coffee“) - returning the following object
+{
+    c: 1,
+    o: 1,
+    f: 2,
+    e: 2
+}
+
+
+3. Write a JavaScript function to convert an object into a list of `[key, value]` pairs.

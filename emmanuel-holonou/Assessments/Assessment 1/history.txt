@@ -1,0 +1,18 @@
+sudo apt install nginx
+sudo service nginx status
+cd ~/emmanuel-holonou/assessment/Assessement1
+tar -cf mysite.tar index.html style.css pictures
+mv mysite.tar /var/www
+cd /var/www
+mkdir eholonou
+mv mysite.tar eholonou
+cd eholonou
+tar -xvf mysite.tar
+ls
+cd /etc/nginx
+ls
+cd conf.d
+sudo touch eholonou.conf
+sudo nano eholonou.conf
+sudo service nginx restart
+sudo nginx -t

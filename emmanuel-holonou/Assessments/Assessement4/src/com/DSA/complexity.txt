@@ -1,0 +1,28 @@
+function f(n) {
+Int m = 0; // 1 operation
+for (int i = 1; i <= n; i *= 3) {  // 3 operations
+m++; // 1 operation
+}
+}
+// 1 + 4N
+// complexity of O(log n)
+
+
+function f(m) {
+if (m === 0 || m % 2 == 0) { // 3 operations
+return;
+}
+
+f(m - 1);
+return;
+}
+
+// complexity of O(m)
+
+
+function f(n, m) {
+if (n <= 0 && m <= 0) return;
+if (m > 0) return f(n, m - 2);
+if (n > 0) return f(n - 1, m);
+return;
+}

@@ -1,0 +1,7 @@
+1. Write a function that will receive a string as a parameter, and will check whether it is a palindrome or not, returning a boolean value. A palindrome is a string that reads the same way both from the beginning and the end, for example "madam", "reviver", "civic"
+
+2. Create the function find (arr, value), which searches for value in an array and returns its number, if found, or -1 if not found.
+
+3. Write a JavaScript program to find the most frequent number of an array.
+
+4. Write a function that takes a number and returns true if the number is a perfect number. The number whose divisors sum is equal to itself is considered perfect, for example 28 is a perfect number, the sum of its divisors (1, 2, 4, 7, 14) is equal to itself.

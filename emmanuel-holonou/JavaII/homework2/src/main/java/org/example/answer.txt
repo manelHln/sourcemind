@@ -1,0 +1,9 @@
+2- Investigate the retention policy of the annotations and explain how it works.
+
+The @Getter and @Setter annotations are using the Source retention policy which make them available in the .class files but they are discarded at runtime.
+
+3-Find the class files that are generated when you compile the Lombok-enabled
+project. Are there any annotations in the class files? Explain how the class files are
+generated.
+
+There are no annotations in the class that are generated but all the getter and setter methods have been generated

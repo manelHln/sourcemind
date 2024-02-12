@@ -1,0 +1,4 @@
+1- 
+	a-) σ bank_name ^ dept_name="Law"(r)
+	b-) σ dept_name,dean_name ^ I.inst_id=D.dept_id(r)
+2- MAX(π(value)(r))

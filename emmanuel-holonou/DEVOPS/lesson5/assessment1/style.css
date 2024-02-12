@@ -1,0 +1,188 @@
+:root{
+    --color-primary: rgb(101, 104, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color: var(--color-primary);
+  color: #fff;
+  max-width: 100vw;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: var(--color-primary);
+  text-transform: capitalize;
+  padding: 10px 10px 10px 0;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+
+button.link{
+    all: unset;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.link:hover{
+    font-weight: bold;
+}
+
+.searchbox{
+    border: none;
+    padding: 8px;
+    width: 60%;
+}
+
+.searchbox:focus{
+    outline: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-block: 40px;
+}
+
+.title {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
+}
+
+.products-container{
+    background-color: rgba(0, 0, 0, 0.09);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  gap: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(90,97,105,.11), 0 4px 8px rgba(90,97,105,.12), 0 10px 10px rgba(90,97,105,.06), 0 7px 70px rgba(90,97,105,.1);
+}
+
+.description{
+    color: gray;
+    text-transform: capitalize;
+}
+
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.product-footer p{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.product-footer a{
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.beer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.beer-description{
+    color: gray;
+}
+
+.add-to-cart{
+    all: unset;
+    background-color: var(--color-primary);
+    text-transform: capitalize;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(90,97,105,.11), 0 4px 8px rgba(90,97,105,.12), 0 10px 10px rgba(90,97,105,.06), 0 7px 70px rgba(90,97,105,.1);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.add-to-cart:hover{
+    opacity: .7;
+}
+
+.beer-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.star {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  right: 5px;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+
+@media screen and (width < 800px) {
+    .product{
+        width: 48%;
+    }
+}
+
+@media screen and (width < 550px) {
+    .product{
+        width: 100%;
+    }
+}
+
+@media screen and (width > 1300px) {
+    .product{
+        width: 23%;
+    }
+}

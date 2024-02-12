@@ -1,0 +1,47 @@
+Assignment 1
+
+sudo cp /var/log/kern.log ~/.; sudo cp /var/log/boot.log ~/.
+gzip kern.log
+gzip -l 
+gunzip kern.log.gz
+zip logs_files.zip kern.log boot.log
+
+Assignment 2
+
+head -7 numbers-en.txt
+head -c 3 numbers-en-txt
+head -n 7 numbers-en.txt numbers-fr.txt
+tail -n 7 numbers-en.txt
+head -c 3 numbers-en.txt
+head -n 7 numbers-en.txt numbers-fr.txt
+sudo chmod +x append_test.sh
+./append_test.sh
+tail -f /tmp/timestamp.log
+
+Assignment 3
+
+grep -w "the" newhome.txt
+grep "the" newhome.txt
+grep -n "are" newhome.txt
+grep "root" /etc/passwd
+grep "^root" /etc/passwd
+grep "sync" /etc/passwd
+grep "sync$" /etc/passwd
+grep -E "sshd|root|operator" /etc/passwd
+grep -E "nob|non" /etc/passwd
+
+Assignment 4
+
+free -h > memory_usage.txt
+ps aux > process.txt
+uptime > loadaverage.txt
+man kill
+man jobs
+ping localhost > /dev/null &
+ps aux | grep "ping"
+kill 1324
+ping localhost > /dev/null &
+ps aux | grep "ping"
+top
+ssh localhost 
+tail -n 20 /var/log/auth.log

@@ -1,0 +1,19 @@
+sudo service nginx status
+cd ~/emmanuel-holonou/assessment/Assessement2
+tar -cf mysite.tar index.html style.css assets script.js
+mv mysite.tar /var/www
+cd /var/www/html
+mkdir eholonou
+mv mysite.tar eholonou
+cd eholonou
+tar -xvf mysite.tar
+ls
+mkdir assessment2
+mv ./* assessment2
+cd /etc/nginx
+ls
+cd conf.d
+sudo touch eholonou.conf
+sudo nano eholonou.conf
+sudo service nginx restart
+sudo nginx -t

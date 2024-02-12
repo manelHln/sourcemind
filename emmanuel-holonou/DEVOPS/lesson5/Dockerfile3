@@ -1,0 +1,10 @@
+FROM centos
+LABEL maintainer="emmanuel Holonou"
+
+RUN yum update -y && yum install -y epel-release && yum install -y nginx
+COPY ./assessment\ 1 /usr/share/nginx/html/assessment1
+COPY ./assessment\ 2 /usr/share/nginx/html/assessment2
+
+EXPOSE 80 443
+CMD ["nginx", "-g", "daemon off;"]
+

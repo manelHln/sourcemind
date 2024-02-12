@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessement 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="search-container">
+        <h2 class="heading">
+          Type to search for any user on github and get it's information!!
+        </h2>
+        <div>
+          <input type="search" name="search" id="search" class="searchbox" />
+          <button class="search-btn">Submit</button><br />
+        </div>
+      </section>
+
+      <section class="cards-container"></section>
+
+      <div class="modal-popup">
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times; </span>
+            <img src="assets/profile.png" alt="avatar" class="avatar" />
+            <span class="retrieved-username"></span>
+            <span class="retrieved-login"></span>
+            <div class="btn-container">
+              <button class="custom-btn url-btn">
+                <a class="link-to-repo" target="_blank" style="all: unset"
+                  >Html Url</a
+                >
+              </button>
+              <button class="custom-btn repo-count-btn">url</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

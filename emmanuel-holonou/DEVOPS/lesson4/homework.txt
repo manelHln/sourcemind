@@ -1,0 +1,49 @@
+Assignement 1
+
+sudo useradd Jane
+sudo userdel Jane
+sudo useradd -m ani
+grep ani /etc/passwd
+ls /home
+sudo userdel ani
+useradd -m aram
+cp -R /home/mowgli /home/aram
+sudo groupadd -g 1500 researcher
+sudo usermod -g researcher aram
+sudo usermod -aG sudo aram
+sudo passwd aram
+sudo userdel aram
+
+Assignment 2
+
+touch test-file-assignment
+mkdir test-directory-assignment
+ll test-file-assignment > output-file
+ll test-directory-assignment > output-directory
+sudo useradd test
+sudo groupadd researcher
+sudo usermod -aG researcher yourusername
+sudo chown test test-file-assignment
+sudo chgrp researcher test-directory-assignment
+sudo chmod 107 test-file-assignment
+sudo chmod 700 test-directory-assignment
+ll test-file-assignment >> output-file
+ll test-directory-assignment >> output-directory
+sudo userdel test
+sudo groupdel researcher
+ll test-file-assignment >> output-file
+ll test-directory-assignment >> output-directory
+
+Assignment 3
+
+sudo apt update
+sudo apt install nginx
+service nginx status
+sudo mkdir /var/www/html/project1
+cp -R ../Frontend/homework1 /var/www/html/project1
+sudo echo "127.0.0.1   devpos.assignment-3-emmanuel.test" >> /etc/hosts
+sudo service nginx restart
+sudo service nginx stop
+sudo apt remove nginx
+sudo rm -rf /var/www/html/project1
+sudo nano /etc/hosts

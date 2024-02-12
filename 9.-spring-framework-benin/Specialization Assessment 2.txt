@@ -1,0 +1,61 @@
+Create a Product management spring boot web/JPA application that allows a user to create their own products and manage them.
+
+The product has a name, description, list of tags, imageBlobId (imageBlobId is a string type, typically the value is a UUID string) and productOwnerUsername
+
+The tag is product specific and has a name attribute only.
+
+as an example, a user with username productUser9 can have a product named 'The Power of Discipline', it can have a description 'How to Use Self Control and Mental Toughness to Achieve Your Goals', imageBlobId ec863e74-6c0e-4f00-b78a-9fe6c294d6ab and tags 'book', 'self-discipline' and 'easy to read'.
+
+There must be 10 predefined users in the application in-memory data structure.
+
+The products and product tags should be kept in the relational postgres database.
+
+Create 2 modules: core and users
+---------------------------------------
+Users module, package name: com.sourcemind.users
+
+In users module create InMemoryUserDetailsManager bean that contains 10 predefined users and is designed for auth purposes. 
+
+The username of users should be ${auth.username.prefix}+$userNumber. i.e if the in application.proeprties the auth.username.prefix=productUser then usernames will be productUser1, productUser2,...productUser9 and productUser10
+The password of each username should be username+'@M0402'. i.e for productUser1 the password will be productUser1@M0402
+All above mentioned users should have PRODUCT_OWNER role only
+--------------------------------------
+
+Core module, package: com.sourcemind.product.management
+
+The core module must depend on users module. The users module configuration files should automatically detected by core module and core module application.properties must support autocomplete of users configuration properties.
+
+1) Create a Product creation 'POST /products' endpoint that takes name, description, and list of tags.
+2) Create Product image attach endpoint 'POST /products/{uuid}/image' that takes imageBlobId
+3) Get all user Products 'GET /products' that takes page and size
+4) Get Product 'GET /products/{uuid}' 
+5) Delete Product 'DELETE /products/{uuid}' that deletes user's product
+6) Create a docker file, build docker image (push docker file with project code)
+
+note:
+handle the below described cases
+1) product creation name, description empty field cases, and return 422 status code with corresponding error messages
+2) user tries to attach an image to a product that does not exist in his or her product list
+3) get all products page/size is null or negative or size is greater than 20
+4) users get product that does not exist in his or her product list
+5) users delete the product that does not exist in his or her product list
+
+the endpoints roles should be defined in the core module
+
+Write unit tests for the facade using mockito 
+
+Architecture style:
+The product should have a layered architecture with layers 'controller', 'api facade', 'domain service' and 'repository'
+
+Architecture decision:
+not a single class of spring security is allowed to use in 'api facade', 'domain service' and 'repository' layers
+The controller layer can access components only in api facade layer
+The facade layer can access components only in the domain service layer
+The domain service can access only other domain services and domain associated repository
+Create abstractions and package private implementations for facade and domain service layer components
+Do not use lombok, implement equals, hashCode and toString for all JPA entites with care 
+Use slf4j Logger, properly add logs for each method invocations (input args and results)
+Do not miss JPA entity annotations even though it works without them
+
+
+

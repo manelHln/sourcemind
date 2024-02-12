@@ -1,0 +1,11 @@
+Deadline on Sunday
+
+1. "Again" button will reset everything(except highscore) 
+2. "Check" button will check input value with the number that program generates.
+    How to generate number between (1 - 20) 
+    Math. floor(Math. random() * 20) + 1
+3. If input value is not the generated number, change message
+"too low" or "too hight" of the following element (<p class="message"></p>) 
+4. Decrease score after every check
+5. Highscore will be the best result everytime
+6. Change background color to green, when user wins

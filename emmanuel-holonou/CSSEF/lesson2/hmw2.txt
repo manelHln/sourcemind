@@ -1,0 +1,12 @@
+Homework 2
+
+1- Yes, increasing the memory (RAM) capacity of a PC can improve its performance speed. With more RAM, the computer can store more data, allowing for smoother multitasking and faster application switching.By increasing the RAM capacity, you provide your computer with more space to store and access data quickly.
+
+2- A device driver is a software program that acts as a middleman between the operating system of a computer and the hardware devices connected to it. It provides a way for the operating system to communicate with and control the hardware.
+
+3- DirectX is an application programming interface (API) developed by Microsoft for Windows and Xbox.a program chooses to use DirectX when it needs to create visually and audibly rich applications, especially games and multimedia software, by leveraging the standardized APIs and features provided by DirectX. It simplifies development, offers advanced graphics capabilities, and ensures compatibility across Windows platforms.
+
+
+4- CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model created by NVIDIA.CUDA provides a set of programming tools, APIs, and libraries that allow developers to write software that can execute massively parallel computations on NVIDIA GPUs.From a usability perspective, CUDA can be utilized by software programs to accelerate computationally intensive tasks. This is particularly useful in areas such as scientific simulations, data analysis, machine learning, image and video processing
+
+5- Boot priority refers to the order in which the computer's firmware (Basic Input/Output System or UEFI) checks and attempts to boot from different devices when starting up.Modifying the boot priority allows you to specify which device the computer should try to boot from first.We usually modify boot priority when trying to install a new system on our machine in order to make it boot from the USB first instead of the HDD for example.To modify the boot priority, we need to enter the BIOS setting by pressing a specific key during startup (the key depends on the make of the machine). Within the BIOS setting there is usually a "Boot" section where you can reorder the devices depending on your preference. 
